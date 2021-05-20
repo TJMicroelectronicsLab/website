@@ -1,0 +1,103 @@
+:root {
+  --black: #1d1008;
+  --med: #9b4e00;
+  --light: #ffcd9b;
+  --pale: #fff4e9;
+  --white: #fffefd;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--pale);
+  color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--med);
+}
+
+a {
+  color: var(--med);
+  box-shadow: inset 0 -2px 0 var(--light);
+  padding: 0px 1px;
+  transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--med);
+  background: var(--light);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--med);
+  text-decoration: none;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.content {
+  flex: 1 0 auto;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.card-wrap {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 1rem;
+  padding-bottom: 15px;
+}
+.card {
+  background-color: var(--white);
+  border-radius: 8px;
+}
+.card-text {
+    padding: 15px;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: var(--med);
+  color: var(--pale);
+  text-align: center;
+  padding: 25px 0px;
+}
+
+::-moz-selection {
+  background: var(--light);
+}
+::selection {
+  background: var(--light);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--pale);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--med);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--med) var(--pale);
+}
