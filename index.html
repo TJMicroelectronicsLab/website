@@ -17,27 +17,42 @@
     <!-- local stylesheet -->
     <link type="text/css" rel="stylesheet" href="main.css">
     <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#17317d">
+    <meta name="msapplication-TileColor" content="#e7ecfb">
+    <meta name="theme-color" content="#e7ecfb">
 </head>
 
 <body>
     <div class="content">
-        <div id="hero">
+        <div class="container" id="hero">
+            <img id="lab" src="images/lab.jpg" alt="A picture of the TJ Microelectronics Research Lab" height="auto"
+                width="100%">
             <h1>TJHSST Microelectronics Research Lab</h1>
-            <p>Welcome! We're so glad that you're here today.</p>
-            <p>This site is still currently under construction, so don't mind the occasional design alteration! We'll
-                soon be updating our favicon and color scheme, among other modifications. If you're interested in
-                contributing to the site, please <a href="#contact">contact us</a>. Our source code can be found on <a
-                    href="https://github.com/TJMicroelectronicsLab/website">Github</a>.</p>
+            <p>Welcome! We're so glad that you're here today. Whether you're a student, parent, teacher, or member of
+                our community, we hope that you'll consider joining us or supporting our work!</p>
+            <p>This site is still currently under construction. If you're interested in contributing to the site, please
+                <a href="#contact">contact us</a>. Our source code can be found on
+                <a href="https://github.com/TJMicroelectronicsLab/website">Github</a>.
+            </p>
         </div>
-        <div id="about">
+        <div class="container" id="about">
             <h2>About</h2>
             <p>Welcome to the TJHSST Microelectronics Research Lab, affectionately known as "the Lab"! Here, some of
                 TJ's finest and brighest minds come together to study anything and everything in the field of
-                electronics. No matter what you're interested in, there's always something for you in the Lab.</p>
-            <p>We're led by Mrs. Pamela Ahn, and we're located in Curie Commons on the second floor, across the hall
-                from the Automation and Robotics Lab (Robo).</p>
+                electronics. No matter what you're interested in, there's always something for you in the Lab &mdash;
+                from FPGAs to 5G research, all the way to playing with sand and listening to the Beatles. With our
+                generous funding, we're able to have state of the art equipment that surpasses university labs and
+                rivals those of the industry.</p>
+            <p>We're currently led by Mrs. Pamela Ahn, and we're located in Curie Commons on the second floor, across
+                the hall from the Automation and Robotics Lab (Robo). We're also part of TJ's new Joint Engineering Lab,
+                which consolidates all of the tech labs for students to have state of the art equipment in not just one
+                lab, but five!</p>
         </div>
-        <div id="club">
+        <div class="container" id="club">
             <h2>Electronics Club</h2>
             <p>We're proud to have our own electronics club, which aims to educate students who are interested in
                 electronics as early as freshman year.</p>
@@ -49,34 +64,61 @@
                 speaker, create their own games, and many more exciting uses of electronics.</p>
             <p>Meetings will be conducted by seniors in the Lab, who will organize lectures and help members in both
                 building simulations of circuits and learning the factors involved in building real ones. You’ll also be
-                able to talk with members of the Lab about anything you might be curious about regarding
-                TJ’s electronics offerings (and much more!). Members of all experience levels are welcome, from freshmen
-                who haven’t even heard of the robot project (be thankful you haven’t yet) to students in the middle of
-                taking the electronics electives! Club meetings will take place on Fridays A and B block.</p>
+                able to talk with members of the Lab about anything you might be curious about regarding TJ’s
+                electronics offerings. Members of all experience levels are welcome, from freshmen who haven’t even
+                heard of the robot project to students in the middle of taking the electronics electives! Club meetings
+                take place on Fridays A and B block.</p>
         </div>
-        <div id="courses">
+        <div class="container" id="courses">
             <h2>Course Offerings</h2>
             <p>In the Lab, we offer four semester courses and yearlong research. You can access detailed course
                 descriptions in the <a
                     href="https://insys.fcps.edu/CourseCatOnline/reportPanel/503/2/0/0/0/1;title=reportPanelSideNav">TJ
-                Course Catalog</a>. Content under construction!</p>
+                    Course Catalog</a>.</p>
             <h3>Accelerated Analog Electronics (9826T5)</h3>
             <p><em>Informally known as Analog.</em></p>
+            <p>How do signals work? It's important that we know what signals are and how they function, because they're
+                everywhere, from the music we listen to all the way to how our brains function! Known as the "warm and
+                fuzzy" part of electronics, we first dive into electronics through a basic understanding of circuits
+                built solely with discrete components. In this class, we partner up and work on an analog audio chain
+                through the whole class to better understand aspects of teamwork, signal transmission, and electronics
+                more broadly.</p>
             <h3>Accelerated Digital Electronics (9826T6)</h3>
             <p><em>Informally known as Digital.</em></p>
+            <p>If Analog were the whimsical and slightly unpredicable course, Digital would be the logical one.
+                Literally. In Digital we explore how circuits can to perform operations such as counting and logical
+                comparisons, forming the building blocks of computers today. We design and build a game throughout the
+                course to aid in our understanding.</p>
             <h3>Advanced Microprocessor Systems (9826T1)</h3>
-            <p><em>Informally known as Microprocessors.</em></p>
+            <p><em>Informally known as Microprocessors. Prerequisites: Accelerated Analog Electronics or Accelerated
+                    Digital Electronics.</em></p>
+            <p>Building off of our knowledge of Digital, in Microprocessors, we look at how a single microprocessor chip
+                can combine all of the digital circuits we previously learned about into one package to perform
+                operations. We also look at programming at the low level with Assembly. Throughout the course, we
+                complete a final project that ties what we've learned during the semester.</p>
             <h3>Audio Electronics (9826T0)</h3>
-            <p><em>Informally known as Audio.</em></p>
+            <p><em>Informally known as Audio. Prerequisites: Accelerated Analog Electronics or Accelerated Digital
+                    Electronics or Advanced Microprocessor Systems.</em></p>
+            <p>Many of us love listening to music, but we don't often think of the steps that have been taking in
+                producing the wonderful music we enjoy. What if we want to change how the music sounds, or Autotune it
+                so it's not as pitchy? In Audio, we dive deep into the world of audio electronics. We discover the world
+                of Digital Signal Processing (DSP), and we research both the theory behind it and apply it through a
+                final project of our choice.</p>
             <h3>Microprocessors Research (9826T2)</h3>
+            <p><em>Informally known as Senior Research. Prerequisites: Accelerated Analog Electronics and Accelerated
+                    Digital Electronics.</em></p>
+            <p>Every TJ senior is required to do research in a specific lab their senior year, and we're proud to offer
+                it alongside our electives! The sky is truly the limit in what you want to pursue in the Lab &mdash; we
+                feature our senior projects below, so feel free to check them out for inspiration.</p>
         </div>
-        <div id="2021">
+        <div class="container" id="2021">
             <h2>Class of 2021</h2>
             <div class="card-wrap">
                 <div class="card">
                     <!-- <img src="xxx" alt="photo of xxx"> -->
                     <div class="card-text">
                         <h3 class="card-title">Sarabeth Joyner</h3>
+                        <p><em>Joint Project</em></p>
                         <p>Design and Implementation of a Laser Microphone System</p>
                     </div>
                 </div>
@@ -84,6 +126,7 @@
                     <!-- <img src="xxx" alt="photo of xxx"> -->
                     <div class="card-text">
                         <h3 class="card-title">Celia Vander Ploeg Fallon</h3>
+                        <p><em>Joint Project</em></p>
                         <p>Design and Implementation of a Laser Microphone System</p>
                     </div>
                 </div>
@@ -92,6 +135,7 @@
                     <div class="card-text">
                         <h3 class="card-title">Dev Patel</h3>
                         <p>SOFA - Steganographic Security on an FPGA</p>
+                        <p><a href="https://github.com/TJMicroelectronicsLab/SOFA-TJHSST-2021">Github</a></p>
                     </div>
                 </div>
                 <div class="card">
@@ -180,14 +224,17 @@
                 </div>
             </div>
         </div>
-        <div id="2022">
+        <div class="container" id="2022">
             <h2>Class of 2022</h2>
-            <p>Coming soon!</p>
+            <p>Coming soon! We're currently taking our first steps to deciding our projects &mdash; stay with us to find
+                out what we'll be up to!</p>
         </div>
-        <div id="contact">
+        <div class="container" id="contact">
             <h2>Contact</h2>
             <p>For more information on the Lab, please join our <a href="https://discord.gg/58U3wGCCyr">Discord</a> or
-                <a href="mailto:tjhsst.microelect@gmail.com">email</a> us!
+                <a href="mailto:tjhsst.microelect@gmail.com">email</a> us! You can also view repositories for Senior
+                Research projects and club lectures on our <a
+                    href="https://github.com/TJMicroelectronicsLab">Github</a>.
             </p>
         </div>
     </div>
