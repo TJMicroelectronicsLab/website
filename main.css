@@ -1,9 +1,9 @@
 :root {
-  --black: #1d1008;
-  --med: #9b4e00;
-  --light: #ffcd9b;
-  --pale: #fff4e9;
-  --white: #fffefd;
+  --black: #050a1a;
+  --med: #17317d;
+  --light: #a5b7ee;
+  --pale: #e7ecfb;
+  --white: #f7f9fe;
 }
 
 html {
@@ -56,6 +56,7 @@ img {
   max-width: 1200px;
   margin: auto;
   margin-bottom: 15px;
+  padding: 10px;
 }
 
 .card-wrap {
@@ -90,6 +91,7 @@ img {
 
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
   background: var(--pale);
